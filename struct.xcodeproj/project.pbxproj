@@ -14,6 +14,7 @@
 		EF6EFB9A25D4CF4E00DCC8DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF6EFB9925D4CF4E00DCC8DF /* Assets.xcassets */; };
 		EF6EFB9D25D4CF4E00DCC8DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF6EFB9B25D4CF4E00DCC8DF /* LaunchScreen.storyboard */; };
 		EF6EFBA725D4D0C500DCC8DF /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6EFBA625D4D0C500DCC8DF /* NextViewController.swift */; };
+		EFC88F6425D62D3C00B45924 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC88F6325D62D3C00B45924 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		EF6EFB9C25D4CF4E00DCC8DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF6EFB9E25D4CF4E00DCC8DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF6EFBA625D4D0C500DCC8DF /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
+		EFC88F6325D62D3C00B45924 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				EF6EFB9025D4CF4C00DCC8DF /* AppDelegate.swift */,
 				EF6EFB9225D4CF4C00DCC8DF /* SceneDelegate.swift */,
+				EFC88F6225D62C4000B45924 /* model */,
 				EF6EFBAA25D4D12C00DCC8DF /* controller */,
 				EF6EFB9625D4CF4C00DCC8DF /* Main.storyboard */,
 				EF6EFB9925D4CF4E00DCC8DF /* Assets.xcassets */,
@@ -76,6 +79,14 @@
 				EF6EFBA625D4D0C500DCC8DF /* NextViewController.swift */,
 			);
 			path = controller;
+			sourceTree = "<group>";
+		};
+		EFC88F6225D62C4000B45924 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				EFC88F6325D62D3C00B45924 /* Person.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFC88F6425D62D3C00B45924 /* Person.swift in Sources */,
 				EF6EFB9525D4CF4C00DCC8DF /* ViewController.swift in Sources */,
 				EF6EFBA725D4D0C500DCC8DF /* NextViewController.swift in Sources */,
 				EF6EFB9125D4CF4C00DCC8DF /* AppDelegate.swift in Sources */,

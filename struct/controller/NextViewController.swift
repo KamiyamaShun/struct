@@ -7,15 +7,37 @@
 
 import UIKit
 
+protocol SetOkDelogate {
+    func setOk(check: Person)
+}
+
 class NextViewController: UIViewController {
 
+    @IBOutlet weak var nameTextField: UITextField!
+    
+    @IBOutlet weak var favoriteTextField: UITextField!
+    
+    @IBOutlet weak var movieTextField: UITextField!
+    
+    var person = Person()
+    
+    var setOkDelogate:SetOkDelogate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
     
-
+    @IBAction func submit(_ sender: Any) {
+        person.name = nameTextField.text!
+        person.favorite = favoriteTextField.text!
+        person.movie = movieTextField.text!
+        
+        setOkDelogate?.setOk(check: person)
+        dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
